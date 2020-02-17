@@ -25,6 +25,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="rik-cJ-e4g" appends="YES" id="xtY-xa-tVS"/>
+                                    <outletCollection property="gestureRecognizers" destination="tc1-9L-Qit" appends="YES" id="Pml-WF-Dyo"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="djY-jS-Txv">
@@ -33,6 +34,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="JQX-Bt-FnE" appends="YES" id="GCY-43-x58"/>
+                                    <outletCollection property="gestureRecognizers" destination="gbn-LG-TuJ" appends="YES" id="Zuy-eO-VPp"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="bID-oi-swO">
@@ -41,6 +43,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="gKz-JT-c91" appends="YES" id="rwB-Ve-4lh"/>
+                                    <outletCollection property="gestureRecognizers" destination="KsB-OO-Vk7" appends="YES" id="gLH-Ai-hE6"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -64,6 +67,21 @@
                         <action selector="didPanKartView:" destination="BYZ-38-t0r" id="kNr-00-2gQ"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="tc1-9L-Qit" userLabel="Bowser Pinch Gesture Recognizer">
+                    <connections>
+                        <action selector="didPinchKart:" destination="BYZ-38-t0r" id="jD1-RT-YWY"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="KsB-OO-Vk7" userLabel="Toad Pinch Gesture Recognizer">
+                    <connections>
+                        <action selector="didPinchKart:" destination="BYZ-38-t0r" id="DXm-TZ-bRI"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="gbn-LG-TuJ" userLabel="Mario Pinch Gesture Recognizer">
+                    <connections>
+                        <action selector="didPinchKart:" destination="BYZ-38-t0r" id="mJS-lF-A1u"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="107.49625187406298"/>
         </scene>

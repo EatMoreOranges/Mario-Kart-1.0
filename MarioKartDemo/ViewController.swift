@@ -29,6 +29,20 @@ class ViewController: UIViewController {
         
     }
     
+
+    @IBAction func didPinchKart(_ sender: UIPinchGestureRecognizer) {
+        //    How do you pinch on the simulator?
+        //    • Hold down the option key and you'll see two gray circles appear. Those represent the user's fingers.
+        //    • Move the cursor while continuing to hold the option key until the circles are close together.
+        //    Now, Additionally hold down the shift key and move the two circles over the object you want to pinch.
+        //    • Release the shift key, while continuing to hold the option key, click on the object you want to pan and (while continuing to hold the click) move the cursor to pinch in and out.
+        let scale = sender.scale
+        print("scale:\(scale)")
+        
+        let KartView = sender.view!
+        KartView.transform = CGAffineTransform(scaleX: scale, y: scale)
+        
+    }
     
     
 }
