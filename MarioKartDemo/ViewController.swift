@@ -45,5 +45,16 @@ class ViewController: UIViewController {
     }
     
     
+    
+    @IBAction func didRotateKartView(_ sender: UIRotationGestureRecognizer) {
+        
+        let rotation = sender.rotation
+        print("rotation: \(rotation)")
+        let kartView = sender.view!
+        kartView.transform = CGAffineTransform(rotationAngle: rotation)
+    
+    }
+    
+    
 }
 
