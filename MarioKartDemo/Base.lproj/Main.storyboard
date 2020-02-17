@@ -27,6 +27,7 @@
                                     <outletCollection property="gestureRecognizers" destination="rik-cJ-e4g" appends="YES" id="xtY-xa-tVS"/>
                                     <outletCollection property="gestureRecognizers" destination="tc1-9L-Qit" appends="YES" id="Pml-WF-Dyo"/>
                                     <outletCollection property="gestureRecognizers" destination="AUF-4O-d4I" appends="YES" id="Esy-GI-oQh"/>
+                                    <outletCollection property="gestureRecognizers" destination="qc3-su-t1s" appends="YES" id="Xnz-A4-r5m"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_1" translatesAutoresizingMaskIntoConstraints="NO" id="djY-jS-Txv">
@@ -37,6 +38,7 @@
                                     <outletCollection property="gestureRecognizers" destination="JQX-Bt-FnE" appends="YES" id="GCY-43-x58"/>
                                     <outletCollection property="gestureRecognizers" destination="gbn-LG-TuJ" appends="YES" id="Zuy-eO-VPp"/>
                                     <outletCollection property="gestureRecognizers" destination="fdY-Uk-Bat" appends="YES" id="wx3-6t-qzB"/>
+                                    <outletCollection property="gestureRecognizers" destination="Koo-94-NsQ" appends="YES" id="f7c-qu-q9B"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="kart_2" translatesAutoresizingMaskIntoConstraints="NO" id="bID-oi-swO">
@@ -47,6 +49,7 @@
                                     <outletCollection property="gestureRecognizers" destination="gKz-JT-c91" appends="YES" id="rwB-Ve-4lh"/>
                                     <outletCollection property="gestureRecognizers" destination="KsB-OO-Vk7" appends="YES" id="gLH-Ai-hE6"/>
                                     <outletCollection property="gestureRecognizers" destination="Pqr-7i-n4V" appends="YES" id="aVc-At-BBu"/>
+                                    <outletCollection property="gestureRecognizers" destination="9FC-SL-fNZ" appends="YES" id="A5Y-ss-44h"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -92,6 +95,21 @@
                 </rotationGestureRecognizer>
                 <rotationGestureRecognizer id="Pqr-7i-n4V" userLabel="Toad Rotation Gesture Recognizer"/>
                 <rotationGestureRecognizer id="fdY-Uk-Bat" userLabel="Mairo Rotation Gesture Recognizer"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="qc3-su-t1s" userLabel="Bowser Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="tSt-ld-GVe"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="Koo-94-NsQ" userLabel="Mario Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="VZH-BU-o7S"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="9FC-SL-fNZ" userLabel="Toad Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="didTapKartView:" destination="BYZ-38-t0r" id="meZ-3i-IJw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="107.49625187406298"/>
         </scene>

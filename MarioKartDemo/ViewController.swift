@@ -56,5 +56,29 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func didTapKartView(_ sender: UITapGestureRecognizer) {
+        print("Double tap recognized")
+        
+        let kartView = sender.view!
+//        kartView.center.x += 75
+              
+        //       1) Set up the beginning state of your view before calling the animation method. (In our case this is just where the kart already is so we don't need to specify further)
+        //       2) Call the animation method, inputting the time duration (in seconds) you want the animation to take.
+        //       3) Use tab to access the various input values of the animation method.
+        //       4) Press return when the () -> Void closure is highlighted to expand it and reveal it's body.
+        //       5) Enter the end values for the view you're animating
+        //       6) In the body of the closure, specify the end state of your view animation. (In our case, this is the position we want the kart finish at)
+        UIView.animate(withDuration: 0.6) {
+            kartView.center.x += 500
+        }
+                
+        
+    }
+    
+    
+    
+    
+    
 }
+
 
